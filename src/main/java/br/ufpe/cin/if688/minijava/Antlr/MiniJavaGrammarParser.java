@@ -1,5 +1,5 @@
-// Generated from C:/Users/ruyov/Documents/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava\MiniJavaGrammar.g4 by ANTLR 4.7.2
-package br.ufpe.cin.if688.minijava;
+// Generated from C:/Users/ruyov/Documents/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava\MinijavaGrammar.g4 by ANTLR 4.7.2
+package br.ufpe.cin.if688.minijava.Antlr;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -87,7 +87,7 @@ public class MiniJavaGrammarParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "MiniJavaGrammar.g4"; }
+	public String getGrammarFileName() { return "MinijavaGrammar.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
