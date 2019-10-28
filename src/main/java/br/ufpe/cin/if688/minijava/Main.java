@@ -1,26 +1,21 @@
 package br.ufpe.cin.if688.minijava;
 
-import br.ufpe.cin.if688.minijava.ast.BooleanType;
-import br.ufpe.cin.if688.minijava.ast.ClassDeclExtends;
-import br.ufpe.cin.if688.minijava.ast.ClassDeclList;
-import br.ufpe.cin.if688.minijava.ast.ClassDeclSimple;
-import br.ufpe.cin.if688.minijava.ast.Identifier;
-import br.ufpe.cin.if688.minijava.ast.IdentifierType;
-import br.ufpe.cin.if688.minijava.ast.IntegerLiteral;
-import br.ufpe.cin.if688.minijava.ast.IntegerType;
-import br.ufpe.cin.if688.minijava.ast.MainClass;
-import br.ufpe.cin.if688.minijava.ast.MethodDeclList;
-import br.ufpe.cin.if688.minijava.ast.Print;
+import br.ufpe.cin.if688.minijava.*;
+import br.ufpe.cin.if688.minijava.Antlr.MiniJavaGrammarLexer;
+import br.ufpe.cin.if688.minijava.Antlr.MiniJavaGrammarParser;
 import br.ufpe.cin.if688.minijava.ast.Program;
-import br.ufpe.cin.if688.minijava.ast.VarDecl;
-import br.ufpe.cin.if688.minijava.ast.VarDeclList;
-import br.ufpe.cin.if688.minijava.visitor.PrettyPrintVisitor;
+import br.ufpe.cin.if688.minijava.visitor.MiniJavaVisitor;
+import org.antlr.v4.runtime.CharStreams;
+import org.antlr.v4.runtime.CommonTokenStream;
+import java.io.IOException;
 
 
 public class Main {
 
-    public static void main(String[] args) {
-        MainClass main = new MainClass(
+    public static void main(String[] args) throws IOException{
+
+        Program program = (Program) new MiniJavaVisitor().visit(new MiniJavaGrammarParser(new CommonTokenStream(new MiniJavaGrammarLexer(CharStreams.fromFileName("C:\\Faculdade\\AST-Minijava\\src\\main\\java\\br\\ufpe\\cin\\if688\\minijava\\test.txt")))).goal());
+        /*MainClass main = new MainClass(
                 new Identifier("Teste"),
                 new Identifier("Testando"),
                 new Print(new IntegerLiteral(2))
@@ -64,7 +59,7 @@ public class Main {
         Program p = new Program(main, cdl);
 
         PrettyPrintVisitor ppv = new PrettyPrintVisitor();
-        ppv.visit(p);
+        ppv.visit(p);*/
     }
 
 }
