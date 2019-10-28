@@ -136,6 +136,66 @@ public class MiniJavaVisitor implements MiniJavaGrammarVisitor {
     }
 
     public Object visitExpression(MiniJavaGrammarParser.ExpressionContext ctx) {
-        return null;
+        String start = ctx.getStart().getText(); //pegar o primeiro simbolo, pra saber 'new', 'int'...
+        int expSize = ctx.expression().size(); //saber qual a qtd de expression
+        int qtdChildren = ctx.getChildCount(); //saber o tamanho da expression
+
+        //expression '.' identifier '(' ( expression ( ',' expression )* )? ')'
+        if(qtdChildren >= 5 && ctx.getChild(1).getText().equals(".")) {
+            Exp exp = (Exp) ctx.expression(0).accept(this);
+            Identifier id = new Identifier(ctx.IDENTIFIER().getText());
+
+            ExpList listExp = new ExpList();
+            for(int i = 1; i < expSize; i++) {
+                listExp.addElement((Exp) ctx.expression(i).accept(this));
+            }
+
+            return new Call(exp, id, listExp);
+        } else if(expSize == 2) { //expression ( '&&' | '<' | '+' | '-' | '*' ) expression
+            Exp ae1 = (Exp) ctx.expression(0).accept(this);
+            Exp ae2 = (Exp) ctx.expression(1).accept(this);
+
+            if(ctx.getChild(1).getText().equals("&&")){
+                return new And(ae1, ae2);
+            }else if(ctx.getChild(1).getText().equals("<")){
+                return new LessThan(ae1, ae2);
+            }else if(ctx.getChild(1).getText().equals("+")){
+                return new Plus(ae1, ae2);
+            }else if(ctx.getChild(1).getText().equals("-")){
+                return new Minus(ae1, ae2);
+            }else if(ctx.getChild(1).getText().equals("*")){
+                return new Times(ae1, ae2);
+            }else {
+                return new ArrayLookup(ae1, ae2);
+            }
+        }
+        else if(expSize == 1) {
+            Exp ae = (Exp) ctx.expression(0).accept(this);
+            if(start.equals("!")) {
+                return new Not(ae);
+            }else if(start.equals("(")) {
+                return ae;
+            }else if(start.equals("new")) {
+                return new NewArray(ae);
+            }else {
+                return new ArrayLength(ae);
+            }
+        } else {
+            if(start.equals("true")){
+                return new True();
+            }else if(start.equals("false")){
+                return new False();
+            }else if(start.equals("this")){
+                return new This();
+            }else if(start.equals("new")){
+                return new NewObject(new Identifier(ctx.IDENTIFIER().getText()));
+            }else{
+                if(start.matches("\\d+")) {
+                    return new IntegerLiteral(Integer.parseInt(ctx.getStart().getText()));
+                } else {
+                    return new IdentifierExp(ctx.IDENTIFIER().getText());
+                }
+            }
+        }
     }
 }
