@@ -1,10 +1,14 @@
 package br.ufpe.cin.if688.minijava;
 
-import br.ufpe.cin.if688.minijava.*;
 import br.ufpe.cin.if688.minijava.Antlr.MiniJavaGrammarLexer;
 import br.ufpe.cin.if688.minijava.Antlr.MiniJavaGrammarParser;
+import br.ufpe.cin.if688.minijava.ast.Identifier;
+import br.ufpe.cin.if688.minijava.ast.MainClass;
+import br.ufpe.cin.if688.minijava.ast.Print;
+import br.ufpe.cin.if688.minijava.ast.*;
 import br.ufpe.cin.if688.minijava.ast.Program;
 import br.ufpe.cin.if688.minijava.visitor.MiniJavaVisitor;
+import br.ufpe.cin.if688.minijava.visitor.PrettyPrintVisitor;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import java.io.IOException;
@@ -14,8 +18,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException{
 
-        Program program = (Program) new MiniJavaVisitor().visit(new MiniJavaGrammarParser(new CommonTokenStream(new MiniJavaGrammarLexer(CharStreams.fromFileName("C:\\Faculdade\\AST-Minijava\\src\\main\\java\\br\\ufpe\\cin\\if688\\minijava\\test.txt")))).goal());
-        /*MainClass main = new MainClass(
+        MainClass main = new MainClass(
                 new Identifier("Teste"),
                 new Identifier("Testando"),
                 new Print(new IntegerLiteral(2))
@@ -57,9 +60,8 @@ public class Main {
         cdl.addElement(C);
 
         Program p = new Program(main, cdl);
-
         PrettyPrintVisitor ppv = new PrettyPrintVisitor();
-        ppv.visit(p);*/
+        ppv.visit(p);
     }
 
 }

@@ -1,4 +1,5 @@
-// Generated from C:/Users/ruyov/Documents/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava/Antlr\MiniJavaGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Faculdade/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava/Antlr\MiniJavaGrammar.g4 by ANTLR 4.7.2
+package br.ufpe.cin.if688.minijava.Antlr;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -64,9 +65,9 @@ public interface MiniJavaGrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitIdentifier(MiniJavaGrammarParser.IdentifierContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link MiniJavaGrammarParser#integral_literal}.
+	 * Visit a parse tree produced by {@link MiniJavaGrammarParser#integer_literal}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitIntegral_literal(MiniJavaGrammarParser.Integral_literalContext ctx);
+	T visitInteger_literal(MiniJavaGrammarParser.Integer_literalContext ctx);
 }

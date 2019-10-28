@@ -1,4 +1,5 @@
-// Generated from C:/Users/ruyov/Documents/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava/Antlr\MiniJavaGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Faculdade/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava/Antlr\MiniJavaGrammar.g4 by ANTLR 4.7.2
+package br.ufpe.cin.if688.minijava.Antlr;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -97,13 +98,13 @@ public interface MiniJavaGrammarListener extends ParseTreeListener {
 	 */
 	void exitIdentifier(MiniJavaGrammarParser.IdentifierContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link MiniJavaGrammarParser#integral_literal}.
+	 * Enter a parse tree produced by {@link MiniJavaGrammarParser#integer_literal}.
 	 * @param ctx the parse tree
 	 */
-	void enterIntegral_literal(MiniJavaGrammarParser.Integral_literalContext ctx);
+	void enterInteger_literal(MiniJavaGrammarParser.Integer_literalContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link MiniJavaGrammarParser#integral_literal}.
+	 * Exit a parse tree produced by {@link MiniJavaGrammarParser#integer_literal}.
 	 * @param ctx the parse tree
 	 */
-	void exitIntegral_literal(MiniJavaGrammarParser.Integral_literalContext ctx);
+	void exitInteger_literal(MiniJavaGrammarParser.Integer_literalContext ctx);
 }

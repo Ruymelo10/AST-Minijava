@@ -1,4 +1,5 @@
-// Generated from C:/Users/ruyov/Documents/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava/Antlr\MiniJavaGrammar.g4 by ANTLR 4.7.2
+// Generated from C:/Faculdade/AST-Minijava/src/main/java/br/ufpe/cin/if688/minijava/Antlr\MiniJavaGrammar.g4 by ANTLR 4.7.2
+package br.ufpe.cin.if688.minijava.Antlr;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -21,15 +22,15 @@ public class MiniJavaGrammarParser extends Parser {
 		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, T__23=24, 
 		T__24=25, T__25=26, T__26=27, T__27=28, T__28=29, T__29=30, T__30=31, 
 		T__31=32, T__32=33, T__33=34, T__34=35, IDENTIFIER=36, INTEGER_LITERAL=37, 
-		WHITESPACE=38, COMMENT=39, LINE_COMMENT=40, INTEGRAL_LITERAL=41;
+		WHITESPACE=38, COMMENT=39, LINE_COMMENT=40;
 	public static final int
 		RULE_goal = 0, RULE_mainClass = 1, RULE_classDeclaration = 2, RULE_varDeclaration = 3, 
 		RULE_methodDeclaration = 4, RULE_type = 5, RULE_statement = 6, RULE_expression = 7, 
-		RULE_identifier = 8, RULE_integral_literal = 9;
+		RULE_identifier = 8, RULE_integer_literal = 9;
 	private static String[] makeRuleNames() {
 		return new String[] {
 			"goal", "mainClass", "classDeclaration", "varDeclaration", "methodDeclaration", 
-			"type", "statement", "expression", "identifier", "integral_literal"
+			"type", "statement", "expression", "identifier", "integer_literal"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
@@ -49,8 +50,7 @@ public class MiniJavaGrammarParser extends Parser {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
-			"IDENTIFIER", "INTEGER_LITERAL", "WHITESPACE", "COMMENT", "LINE_COMMENT", 
-			"INTEGRAL_LITERAL"
+			"IDENTIFIER", "INTEGER_LITERAL", "WHITESPACE", "COMMENT", "LINE_COMMENT"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -795,8 +795,8 @@ public class MiniJavaGrammarParser extends Parser {
 	}
 
 	public static class ExpressionContext extends ParserRuleContext {
-		public Integral_literalContext integral_literal() {
-			return getRuleContext(Integral_literalContext.class,0);
+		public Integer_literalContext integer_literal() {
+			return getRuleContext(Integer_literalContext.class,0);
 		}
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
@@ -848,7 +848,7 @@ public class MiniJavaGrammarParser extends Parser {
 			case 1:
 				{
 				setState(160);
-				integral_literal();
+				integer_literal();
 				}
 				break;
 			case 2:
@@ -993,7 +993,7 @@ public class MiniJavaGrammarParser extends Parser {
 						setState(207);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__30) | (1L << T__31) | (1L << T__32) | (1L << T__33) | (1L << T__34) | (1L << IDENTIFIER) | (1L << INTEGRAL_LITERAL))) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__6) | (1L << T__30) | (1L << T__31) | (1L << T__32) | (1L << T__33) | (1L << T__34) | (1L << IDENTIFIER) | (1L << INTEGER_LITERAL))) != 0)) {
 							{
 							setState(199);
 							expression(0);
@@ -1082,35 +1082,35 @@ public class MiniJavaGrammarParser extends Parser {
 		return _localctx;
 	}
 
-	public static class Integral_literalContext extends ParserRuleContext {
-		public TerminalNode INTEGRAL_LITERAL() { return getToken(MiniJavaGrammarParser.INTEGRAL_LITERAL, 0); }
-		public Integral_literalContext(ParserRuleContext parent, int invokingState) {
+	public static class Integer_literalContext extends ParserRuleContext {
+		public TerminalNode INTEGER_LITERAL() { return getToken(MiniJavaGrammarParser.INTEGER_LITERAL, 0); }
+		public Integer_literalContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_integral_literal; }
+		@Override public int getRuleIndex() { return RULE_integer_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MiniJavaGrammarListener ) ((MiniJavaGrammarListener)listener).enterIntegral_literal(this);
+			if ( listener instanceof MiniJavaGrammarListener ) ((MiniJavaGrammarListener)listener).enterInteger_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MiniJavaGrammarListener ) ((MiniJavaGrammarListener)listener).exitIntegral_literal(this);
+			if ( listener instanceof MiniJavaGrammarListener ) ((MiniJavaGrammarListener)listener).exitInteger_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MiniJavaGrammarVisitor ) return ((MiniJavaGrammarVisitor<? extends T>)visitor).visitIntegral_literal(this);
+			if ( visitor instanceof MiniJavaGrammarVisitor ) return ((MiniJavaGrammarVisitor<? extends T>)visitor).visitInteger_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
 
-	public final Integral_literalContext integral_literal() throws RecognitionException {
-		Integral_literalContext _localctx = new Integral_literalContext(_ctx, getState());
-		enterRule(_localctx, 18, RULE_integral_literal);
+	public final Integer_literalContext integer_literal() throws RecognitionException {
+		Integer_literalContext _localctx = new Integer_literalContext(_ctx, getState());
+		enterRule(_localctx, 18, RULE_integer_literal);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(218);
-			match(INTEGRAL_LITERAL);
+			match(INTEGER_LITERAL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1146,7 +1146,7 @@ public class MiniJavaGrammarParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3+\u00df\4\2\t\2\4"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3*\u00df\4\2\t\2\4"+
 		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
 		"\13\3\2\3\2\7\2\31\n\2\f\2\16\2\34\13\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3"+
 		"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\4\3\4\3\4\3\4\5\4"+
@@ -1214,7 +1214,7 @@ public class MiniJavaGrammarParser extends Parser {
 		"\2\2\u00d5\u00ba\3\2\2\2\u00d5\u00bd\3\2\2\2\u00d5\u00c2\3\2\2\2\u00d5"+
 		"\u00c5\3\2\2\2\u00d6\u00d9\3\2\2\2\u00d7\u00d5\3\2\2\2\u00d7\u00d8\3\2"+
 		"\2\2\u00d8\21\3\2\2\2\u00d9\u00d7\3\2\2\2\u00da\u00db\7&\2\2\u00db\23"+
-		"\3\2\2\2\u00dc\u00dd\7+\2\2\u00dd\25\3\2\2\2\22\32\65;AVY`ftz\u009f\u00b8"+
+		"\3\2\2\2\u00dc\u00dd\7\'\2\2\u00dd\25\3\2\2\2\22\32\65;AVY`ftz\u009f\u00b8"+
 		"\u00ce\u00d1\u00d5\u00d7";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
