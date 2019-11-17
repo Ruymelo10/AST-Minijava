@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c66728-0a02-4f4b-81ce-b24eaa5a8337" name="Default Changelist" comment="">
+    <list default="true" id="06d9b800-6bde-474a-939d-0220f6b9d084" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_61_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_abego_treelayout_org_abego_treelayout_core_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_ST4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_4_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/MiniJavaVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/MiniJavaVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/MiniJavaVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/And.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayAssign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayAssign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayLookup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ArrayLookup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Assign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Assign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/BooleanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/BooleanType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Call.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclExtends.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclExtends.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ClassDeclSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Exp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Exp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ExpList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/ExpList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/False.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/False.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Formal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Formal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/FormalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/FormalList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Identifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Identifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IdentifierExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IdentifierExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IdentifierType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IdentifierType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/If.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntArrayType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntArrayType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntegerLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntegerLiteral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntegerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/IntegerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/LessThan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/LessThan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MethodDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MethodDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MethodDeclList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/MethodDeclList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Minus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Minus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/NewArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/NewArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/NewObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/NewObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Not.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Not.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Plus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Statement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/StatementList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/StatementList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/This.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/This.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Times.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Times.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/True.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/True.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/VarDecl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/VarDecl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/VarDeclList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/VarDeclList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/While.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/ast/While.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/minijava.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/symboltable/Variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/MiniJavaVisitor.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,42 +74,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1SNXZHM7chWNawV8DlKfQRexZ7Z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541882083224" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-  </component>
+  <component name="ProjectId" id="1SqNDHGKDnmfef3LNV1RsoRlPe1" />
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.ufpe.cin.if688.minijava.visitor" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ruyov\Documents\AST-Minijava\src\main\java\br\ufpe\cin\if688\minijava\Antlr" />
+      <recent name="C:\Faculdade\AST-Minijava\src\main\java\br\ufpe\cin\if688\minijava\Antlr" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,23 +123,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="40c66728-0a02-4f4b-81ce-b24eaa5a8337" name="Default Changelist" comment="" />
-      <created>1541881762411</created>
+      <changelist id="06d9b800-6bde-474a-939d-0220f6b9d084" name="Default Changelist" comment="" />
+      <created>1572287044768</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541881762411</updated>
-      <workItem from="1541881765528" duration="240000" />
-      <workItem from="1555089853819" duration="9185000" />
-      <workItem from="1555167835322" duration="2826000" />
-      <workItem from="1555186958324" duration="2507000" />
+      <updated>1572287044768</updated>
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14758000" />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -117,9 +144,26 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/ufpe/cin/if688/minijava/visitor/TypeCheckVisitor.java</url>
+          <line>319</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="n.i2" language="JAVA" />
+        <watch expression="n.ml" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

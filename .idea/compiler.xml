@@ -9,8 +9,5 @@
         <module name="minijava" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="minijava" target="6" />
-    </bytecodeTargetLevel>
   </component>
 </project>

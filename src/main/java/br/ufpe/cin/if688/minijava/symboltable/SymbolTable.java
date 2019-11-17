@@ -1,12 +1,11 @@
 package br.ufpe.cin.if688.minijava.symboltable;
 
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Set;
 
-import br.ufpe.cin.if688.minijava.ast.BooleanType;
-import br.ufpe.cin.if688.minijava.ast.IdentifierType;
-import br.ufpe.cin.if688.minijava.ast.IntArrayType;
-import br.ufpe.cin.if688.minijava.ast.IntegerType;
-import br.ufpe.cin.if688.minijava.ast.Type;
+import br.ufpe.cin.if688.minijava.ast.*;
+import br.ufpe.cin.if688.minijava.exceptions.PrintException;
 
 public class SymbolTable {
 
@@ -58,13 +57,17 @@ public class SymbolTable {
 				}
 			}
 		}
-
-		throw new RuntimeException(String.format("Variavel " + id + " nao definida no escopo atual"));
+		System.out.println("Variable " + id + " not defined in current scope");
+		System.exit(0);
+//		throw new RuntimeException(String.format("Variavel " + id + " nao definida no escopo atual"));
+		return null;
 	}
 
 	public Method getMethod(String id, String classScope) {
 		if (getClass(classScope) == null) {
-			throw new RuntimeException(String.format("Class " + classScope + " nao definida"));
+			System.out.println("Class '" + classScope + "' not defined");
+			System.exit(0);
+//			throw new RuntimeException(String.format("Class " + classScope + " nao definida"));
 		}
 
 		Class c = getClass(classScope);
@@ -79,14 +82,17 @@ public class SymbolTable {
 				}
 			}
 		}
-
-		throw new RuntimeException(String.format("Metodo " + id + " nao definido na classe " + classScope));
-
+		System.out.println("Method " + id + " not defined in class " + classScope);
+		System.exit(0);
+//		throw new RuntimeException(String.format("Metodo " + id + " nao definido na classe " + classScope));
+		return null;
 	}
 
 	public Type getMethodType(String id, String classScope) {
 		if (getClass(classScope) == null) {
-			throw new RuntimeException(String.format("Classe " + classScope + " nao definida"));
+			System.out.println("Class '" + classScope + "' not defined");
+			System.exit(0);
+//			throw new RuntimeException(String.format("Classe " + classScope + " nao definida"));
 		}
 
 		Class c = getClass(classScope);
@@ -101,8 +107,10 @@ public class SymbolTable {
 				}
 			}
 		}
-
-		throw new RuntimeException(String.format("Metodo " + id + " nao definido na classe " + classScope));
+		System.out.println("Method " + id + " not defined in class " + classScope);
+		System.exit(0);
+//		throw new RuntimeException(String.format("Metodo " + id + " nao definido na classe " + classScope);
+		return null;
 	}
 
 	public boolean compareTypes(Type t1, Type t2) {
@@ -134,4 +142,31 @@ public class SymbolTable {
 		return false;
 	}
 
+	public String toString() {
+		String symbolTableString = "";
+
+		Set<Object> keys = symbolTable.keySet();
+		Iterator<Object> it = keys.iterator();
+
+		System.out.println("SymbolTable [");
+		while (it.hasNext()) {
+			Object key = it.next();
+			String obj = symbolTable.get(key).toString();
+			obj = removePrefix(obj, "br.ufpe.cin.if688.minijava.symboltable.");
+			obj = obj.substring(0, obj.lastIndexOf('@'));
+
+			System.out.println("    " + obj + " " + key );
+		}
+		System.out.print("]");
+
+
+		return symbolTableString;
+	}
+
+	public static String removePrefix(String s, String prefix) {
+		if (s != null && s.startsWith(prefix)) {
+			return s.split(prefix)[1];
+		}
+		return s;
+	}
 }// SymbolTable
